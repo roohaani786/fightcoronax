@@ -107,9 +107,9 @@ class _CasesIndiaState extends State<CasesIndia> {
               if (snapshot.hasData) {
 
                 return Padding(
-                  padding: const EdgeInsets.only(left: 30.0,top: 10.0),
+                  padding: const EdgeInsets.only(left: 30.0,top: 20.0),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 14.0,left:45.0),
+                    padding: const EdgeInsets.only(top: 34.0,left:45.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,

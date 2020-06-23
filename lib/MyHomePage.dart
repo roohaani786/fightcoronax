@@ -93,251 +93,254 @@ class _MyHomePageState extends State<MyHomePage> {
 
       //Body
 
-        body: Center(
-          child: FutureBuilder<Album>(
-            future: futureAlbum,
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
+        body: Padding(
+          padding: const EdgeInsets.only(top: 10.0,left: 0.0),
+          child: Center(
+            child: FutureBuilder<Album>(
+              future: futureAlbum,
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
 
-                return Padding(
-                  padding: const EdgeInsets.all(30.0),
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 40.0,left:50.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
+                  return Padding(
+                    padding: const EdgeInsets.all(30.0),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 40.0,left:35.0),
+                      child: Row(
 
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
 
-                          children: <Widget>[
-                            Container(
-                              height: 30.0,
-                              width: 260.0,
-                              decoration: BoxDecoration(
-                                  color: Colors.deepPurple,
-                                  borderRadius: BorderRadius.all(
-                                      Radius.circular(50)),
-                                  ),
-                              child: Text("Global Coronavirus cases",textAlign: TextAlign.center,style:
-                              TextStyle(color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20.0),),
-                            ),
+                          Column(
 
-                            Padding(padding: const EdgeInsets.only(top: 60.0)),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: <Widget>[
-
-
-                                Container(
-                                  height: 100.0,
-
-                                  width: 100.0,
-
-                                  alignment:Alignment.center,
-                                  decoration: BoxDecoration(
-                                      color: Colors.blue,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.orangeAccent,
-                                            offset: Offset(4.0, 4.0),
-                                            blurRadius: 5.0,
-                                            spreadRadius: 0.0),
-                                        BoxShadow(
-                                            color: Colors.orangeAccent,
-                                            offset: Offset(-4.0, -4.0),
-                                            blurRadius: 5.0,
-                                            spreadRadius: 0.0),
-                                      ]),
-                                  child: Text("Cases",style:
-                                  TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16.0,
-                                  ),),
+                            children: <Widget>[
+                              Container(
+                                height: 35.0,
+                                width: 260.0,
+                                decoration: BoxDecoration(
+                                    color: Colors.deepPurple,
+                                    borderRadius: BorderRadius.all(
+                                        Radius.circular(50)),
+                                    ),
+                                child: Align(
+                                  alignment: Alignment.center,
+                                  child: Text("Global Coronavirus cases",textAlign: TextAlign.center,style:
+                                  TextStyle(color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20.0),),
                                 ),
+                              ),
 
-                                Padding(padding: const EdgeInsets.only(left: 50.0)),
+                              Padding(padding: const EdgeInsets.only(top: 80.0)),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: <Widget>[
 
 
-                                Container(
-                                  height: 100.0,
+                                  Container(
+                                    height: 100.0,
 
-                                  width: 100.0,
-                                  decoration: BoxDecoration(
-                                      color: Colors.black,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.redAccent,
-                                            offset: Offset(4.0, 4.0),
-                                            blurRadius: 10.0,
-                                            spreadRadius: 1.0),
-                                        BoxShadow(
-                                            color: Colors.orangeAccent,
-                                            offset: Offset(-4.0, -4.0),
-                                            blurRadius: 10.0,
-                                            spreadRadius: 1.0),
-                                      ]),
-                                  alignment:Alignment.center,
-                                  child: Text(snapshot.data.cases.toString(),style:
-                                  TextStyle(
-                                      color: Colors.cyanAccent
-                                  ),),
-                                ),
-                              ],
-                            ),
+                                    width: 100.0,
 
-                            Padding(padding: const EdgeInsets.only(top: 40.0)),
-
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: <Widget>[
-                                Container(
-                                  height: 100.0,
-                                  width: 100.0,
-                                  decoration: BoxDecoration(
-                                      color: Colors.red,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.green,
-                                            offset: Offset(4.0, 4.0),
-                                            blurRadius: 5.0,
-                                            spreadRadius: 0.0),
-                                        BoxShadow(
-                                            color: Colors.green,
-                                            offset: Offset(-4.0, -4.0),
-                                            blurRadius: 5.0,
-                                            spreadRadius: 0.0),
-                                      ]),
-                                  alignment:Alignment.center,
-                                  child: Text("Deaths",style:
-                                  TextStyle(
+                                    alignment:Alignment.center,
+                                    decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(50)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.orangeAccent,
+                                              offset: Offset(4.0, 4.0),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.0),
+                                          BoxShadow(
+                                              color: Colors.orangeAccent,
+                                              offset: Offset(-4.0, -4.0),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.0),
+                                        ]),
+                                    child: Text("Cases",style:
+                                    TextStyle(
                                       color: Colors.white,
                                       fontSize: 16.0,
-                                  ),),
-                                ),
+                                    ),),
+                                  ),
+
+                                  Padding(padding: const EdgeInsets.only(left: 50.0)),
 
 
-                                Padding(padding: const EdgeInsets.only(left: 50.0)),
-                                Container(
-                                  height: 100.0,
-                                  width: 100.0,
-                                  decoration: BoxDecoration(
-                                      color: Colors.black,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.redAccent,
-                                            offset: Offset(4.0, 4.0),
-                                            blurRadius: 10.0,
-                                            spreadRadius: 1.0),
-                                        BoxShadow(
-                                            color: Colors.orangeAccent,
-                                            offset: Offset(-4.0, -4.0),
-                                            blurRadius: 10.0,
-                                            spreadRadius: 1.0),
-                                      ]),
-                                  alignment:Alignment.center,
-                                  child: Text(snapshot.data.deaths.toString(),style:
-                                  TextStyle(
-                                    color: Colors.cyanAccent,
-                                  ),),
-                                ),
-                              ],
-                            ),
+                                  Container(
+                                    height: 100.0,
+
+                                    width: 100.0,
+                                    decoration: BoxDecoration(
+                                        color: Colors.black,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(50)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.redAccent,
+                                              offset: Offset(4.0, 4.0),
+                                              blurRadius: 10.0,
+                                              spreadRadius: 1.0),
+                                          BoxShadow(
+                                              color: Colors.orangeAccent,
+                                              offset: Offset(-4.0, -4.0),
+                                              blurRadius: 10.0,
+                                              spreadRadius: 1.0),
+                                        ]),
+                                    alignment:Alignment.center,
+                                    child: Text(snapshot.data.cases.toString(),style:
+                                    TextStyle(
+                                        color: Colors.cyanAccent
+                                    ),),
+                                  ),
+                                ],
+                              ),
+
+                              Padding(padding: const EdgeInsets.only(top: 40.0)),
+
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
+                                    height: 100.0,
+                                    width: 100.0,
+                                    decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(50)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.green,
+                                              offset: Offset(4.0, 4.0),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.0),
+                                          BoxShadow(
+                                              color: Colors.green,
+                                              offset: Offset(-4.0, -4.0),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.0),
+                                        ]),
+                                    alignment:Alignment.center,
+                                    child: Text("Deaths",style:
+                                    TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16.0,
+                                    ),),
+                                  ),
 
 
-                            Padding(padding: const EdgeInsets.only(top: 40.0)),
+                                  Padding(padding: const EdgeInsets.only(left: 50.0)),
+                                  Container(
+                                    height: 100.0,
+                                    width: 100.0,
+                                    decoration: BoxDecoration(
+                                        color: Colors.black,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(50)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.redAccent,
+                                              offset: Offset(4.0, 4.0),
+                                              blurRadius: 10.0,
+                                              spreadRadius: 1.0),
+                                          BoxShadow(
+                                              color: Colors.orangeAccent,
+                                              offset: Offset(-4.0, -4.0),
+                                              blurRadius: 10.0,
+                                              spreadRadius: 1.0),
+                                        ]),
+                                    alignment:Alignment.center,
+                                    child: Text(snapshot.data.deaths.toString(),style:
+                                    TextStyle(
+                                      color: Colors.cyanAccent,
+                                    ),),
+                                  ),
+                                ],
+                              ),
 
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: <Widget>[
-                                Container(
 
-                                  height: 100.0,
-                                  width: 100.0,
-                                  decoration: BoxDecoration(
-                                      color: Colors.green,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.blueAccent,
-                                            offset: Offset(4.0, 4.0),
-                                            blurRadius: 5.0,
-                                            spreadRadius: 0.0),
-                                        BoxShadow(
-                                            color: Colors.blueAccent,
-                                            offset: Offset(-4.0, -4.0),
-                                            blurRadius: 5.0,
-                                            spreadRadius: 0.0),
-                                      ]),
-                                  alignment:Alignment.center,
-                                  child: Text("Recovered",style:
-                                  TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16.0,
-                                  ),),
-                                ),
+                              Padding(padding: const EdgeInsets.only(top: 40.0)),
 
-                                Padding(padding: const EdgeInsets.only(left: 50.0)),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: <Widget>[
+                                  Container(
 
-                                Container(
-                                  height: 100.0,
-                                  width: 100.0,
-                                  decoration: BoxDecoration(
-                                      color: Colors.black,
-                                      borderRadius: BorderRadius.all(
-                                          Radius.circular(50)),
-                                      boxShadow: [
-                                        BoxShadow(
-                                            color: Colors.redAccent,
-                                            offset: Offset(4.0, 4.0),
-                                            blurRadius: 10.0,
-                                            spreadRadius: 1.0),
-                                        BoxShadow(
-                                            color: Colors.orangeAccent,
-                                            offset: Offset(-4.0, -4.0),
-                                            blurRadius: 10.0,
-                                            spreadRadius: 1.0),
-                                      ]),
-                                  alignment:Alignment.center,
-                                  child: Text(snapshot.data.recovered.toString(),style:
-                                  TextStyle(
-                                      color: Colors.cyanAccent
-                                  ),),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ],
+                                    height: 100.0,
+                                    width: 100.0,
+                                    decoration: BoxDecoration(
+                                        color: Colors.green,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(50)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.blueAccent,
+                                              offset: Offset(4.0, 4.0),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.0),
+                                          BoxShadow(
+                                              color: Colors.blueAccent,
+                                              offset: Offset(-4.0, -4.0),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.0),
+                                        ]),
+                                    alignment:Alignment.center,
+                                    child: Text("Recovered",style:
+                                    TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 16.0,
+                                    ),),
+                                  ),
+
+                                  Padding(padding: const EdgeInsets.only(left: 50.0)),
+
+                                  Container(
+                                    height: 100.0,
+                                    width: 100.0,
+                                    decoration: BoxDecoration(
+                                        color: Colors.black,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(50)),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.redAccent,
+                                              offset: Offset(4.0, 4.0),
+                                              blurRadius: 10.0,
+                                              spreadRadius: 1.0),
+                                          BoxShadow(
+                                              color: Colors.orangeAccent,
+                                              offset: Offset(-4.0, -4.0),
+                                              blurRadius: 10.0,
+                                              spreadRadius: 1.0),
+                                        ]),
+                                    alignment:Alignment.center,
+                                    child: Text(snapshot.data.recovered.toString(),style:
+                                    TextStyle(
+                                        color: Colors.cyanAccent
+                                    ),),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                );
+                  );
 
 
-              } else if (snapshot.hasError) {
-                return Text("${snapshot.error}");
+                } else if (snapshot.hasError) {
+                  return Text("${snapshot.error}");
 
-              }
+                }
 
-              // By default, show a loading spinner.
-              return CircularProgressIndicator();
-            },
+                // By default, show a loading spinner.
+                return CircularProgressIndicator();
+              },
+            ),
           ),
         ),
       ),
