@@ -17,7 +17,7 @@ class SplashScreenState extends State<AnimatedSplashScreen>
   Animation<double> animation;
 
   startTime() async {
-    var _duration = new Duration(seconds: 3);
+    var _duration = new Duration(seconds: 6);
     return new Timer(_duration, navigationPage);
   }
 
@@ -45,6 +45,7 @@ class SplashScreenState extends State<AnimatedSplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
@@ -60,15 +61,17 @@ class SplashScreenState extends State<AnimatedSplashScreen>
           new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("Fight Corona",style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.w800,
-              ),),
+
               new Image.asset(
                 'lib/images/FightCorona.png',
-                width: animation.value * 250,
-                height: animation.value * 250,
+                width: animation.value * 450,
+                height: animation.value * 650,
               ),
+              Text("Fight Corona",style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.w800,
+                color: Colors.white,
+              ),),
             ],
           ),
         ],
