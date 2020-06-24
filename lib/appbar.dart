@@ -37,12 +37,12 @@ class BaseAppBar extends StatelessWidget implements PreferredSizeWidget{
         decoration: BoxDecoration(
 
           gradient: LinearGradient(colors: [
-            Colors.blue,
-            Colors.green,
+            Colors.black,
+            Colors.black,
           ]),
-          borderRadius: BorderRadius.circular(40.0),
+          borderRadius: BorderRadius.circular(30.0),
           boxShadow: [
-            new BoxShadow(blurRadius: 10.0,color: Colors.greenAccent),
+            new BoxShadow(blurRadius: 5.0,color: Colors.white),
           ],
 
         ),

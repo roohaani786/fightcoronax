@@ -11,11 +11,12 @@ class  MyBottomNavigationBar extends StatelessWidget{
     return BottomNavigationBar(
 
 
-backgroundColor: Colors.black,
+backgroundColor: Colors.deepPurple,
+      selectedItemColor: Colors.blue.shade800,
 
       items: [
         BottomNavigationBarItem(icon:  IconButton(
-          icon:  Icon(Icons.home,color: Colors.lightGreenAccent,),
+          icon:  Icon(Icons.home,color: Colors.green.shade300,),
           onPressed: (){
             // Do something
             Navigator.push(context, MaterialPageRoute(builder: (context) => MyHomePage()));
@@ -23,7 +24,7 @@ backgroundColor: Colors.black,
         ), title: Text('Home',style: TextStyle(color:
         Colors.white,),),),
         BottomNavigationBarItem(icon: IconButton(
-          icon:  Icon(Icons.new_releases,color: Colors.deepOrange,),
+          icon:  Icon(Icons.new_releases,color: Colors.deepOrange.shade200,),
           onPressed: (){
             // Do something
             Navigator.push(context, MaterialPageRoute(builder: (context) => MythBusters()));
@@ -31,7 +32,7 @@ backgroundColor: Colors.black,
     ), title: Text('MythBusters',style: TextStyle(color:
         Colors.white),)),
         BottomNavigationBarItem(icon: IconButton(
-          icon:  Icon(Icons.local_hospital,color: Colors.cyanAccent,),
+          icon:  Icon(Icons.local_hospital,color: Colors.cyanAccent.shade100,),
           onPressed: (){
             // Do something
             Navigator.push(context, MaterialPageRoute(builder: (context) => Symptomps()));
@@ -39,6 +40,7 @@ backgroundColor: Colors.black,
     ), title: Text('Symptoms',style: TextStyle(color:
         Colors.white),)),
       ],
+
     );
   }
 

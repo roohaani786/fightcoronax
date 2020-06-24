@@ -32,6 +32,7 @@ dependencies:
   universal_html: ^1.1.18
   google_fonts:
   gradient_bottom_navigation_bar:
+  fl_chart:
 
 dev_dependencies:
   flutter_test:
