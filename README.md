@@ -1,6 +1,8 @@
-# fightcoronax
+# Fight Corona
 
-A new Flutter project.
+A new Flutter application featuring Global as well as Country-wide Coronavirus cases as well as mythbusters and tips to prevent Coronavirus. This is an excellent implementation of http requests flutter package,future builder and JSON parsing. GET method is used
+
+I've used Coronavirus API for this which takes data from John Hopkins through WHO, and updates realtime.
 
 ## Getting Started
 
