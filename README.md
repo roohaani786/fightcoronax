@@ -18,9 +18,9 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 <img src="screenshot.png" width="220" height="320">
-<img src="screenshot1.png" width="220" height="320">
-<img src="screenshot2.png" width="220" height="320">
-<img src="screenshot3.png" width="220" height="320">
-<img src="screenshot4.png" width="220" height="320">
-<img src="screenshot5.png" width="220" height="320">
-<img src="screenshot6.png" width="220" height="320">
+<img src="WhatsApp Image 2020-06-25 at 2.55.21 PM(4).jpeg" width="220" height="320">
+<img src="WhatsApp Image 2020-06-25 at 2.55.21 PM(3).jpeg" width="220" height="320">
+<img src="WhatsApp Image 2020-06-25 at 2.55.21 PM(2).jpeg" width="220" height="320">
+<img src="WhatsApp Image 2020-06-25 at 2.55.21 PM(1).jpeg" width="220" height="320">
+<img src="WhatsApp Image 2020-06-25 at 2.55.21 PM.jpeg" width="220" height="320">
+<img src="WhatsApp Image 2020-06-25 at 2.55.21 PM(5).jpeg" width="220" height="320">
