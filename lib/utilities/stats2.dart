@@ -25,8 +25,8 @@ class Stats extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Expanded(
-          child: Column(
+
+           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               StatsRow(
@@ -47,11 +47,17 @@ class Stats extends StatelessWidget {
                 number: deadNumber,
                 percentage: deadPercentage,
               ),
+              StatsRow(
+                colour: kColourPietoday,
+                label: 'Cases Today',
+                number: casestoday,
+//                percentage: deadPercentage,
+              ),
 
 
             ],
           ),
-        ),
+
       ],
     );
   }

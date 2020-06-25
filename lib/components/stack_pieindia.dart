@@ -58,9 +58,15 @@ class StackPie extends StatelessWidget {
                 radius: radius,
                 showTitle: showTitles,
               ),
+              PieChartSectionData(
 
+                color: kColourPietoday,
+                radius: radius,
+                showTitle: showTitles,
+              ),
             ],
           ),
+
         ),
       ],
     );

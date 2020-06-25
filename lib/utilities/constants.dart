@@ -11,6 +11,7 @@ final kColourBackground = Colors.lightGreen[200];
 final kColourPieSick = const Color(0xFF3700B3);
 final kColourPieRecovered = const Color(0xFF03DAC6);
 final kColourPieDead = Colors.red;
+final kColourPietoday = Colors.yellowAccent;
 
 final kColourAlertBackground = Colors.red[700];
 

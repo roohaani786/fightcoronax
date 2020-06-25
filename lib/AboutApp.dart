@@ -8,7 +8,7 @@ class AboutApp extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white10,
       appBar: BaseAppBar(
         title: Text("hekko"),
         appbar: AppBar(),

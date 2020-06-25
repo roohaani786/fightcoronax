@@ -11,11 +11,14 @@ class  MyBottomNavigationBar extends StatelessWidget{
     return BottomNavigationBar(
 
 
-backgroundColor: Colors.deepPurple,
+      backgroundColor: Colors.white12,
       selectedItemColor: Colors.blue.shade800,
 
+
+
       items: [
-        BottomNavigationBarItem(icon:  IconButton(
+        BottomNavigationBarItem(
+        icon:  IconButton(
           icon:  Icon(Icons.home,color: Colors.green.shade300,),
           onPressed: (){
             // Do something

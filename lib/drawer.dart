@@ -14,7 +14,7 @@ class MyDrawer extends StatelessWidget{
 
     return Theme(
           data: Theme.of(context).copyWith(
-            canvasColor: Colors.black, //This will change the drawer background to blue.
+            canvasColor: Colors.black45,//This will change the drawer background to blue.
             //other styles
           ),
       child: Drawer(

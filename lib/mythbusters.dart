@@ -8,7 +8,7 @@ class MythBusters extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Colors.black,
+        backgroundColor: Colors.white10,
       appBar: BaseAppBar(
         appbar: AppBar(),
       ),
@@ -28,7 +28,7 @@ class MythBusters extends StatelessWidget{
                 padding: const EdgeInsets.only(top: 30.0,left: 35.0,right: 35.0),
                 child: Text('MythBusters !', textAlign: TextAlign.justify,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 4,style:  TextStyle(color: Colors.cyanAccent,fontSize: 30.0 ,fontWeight: FontWeight.w700),
+                  maxLines: 4,style:  TextStyle(color: Colors.greenAccent,fontSize: 30.0 ,fontWeight: FontWeight.w700),
                 ),
               ),
 
@@ -93,7 +93,7 @@ class MythBusters extends StatelessWidget{
           padding: const EdgeInsets.only(top: 20.0,left: 35.0,right: 35.0),
           child: Text("Are hand dryers effective in killing the new coronavirus?", textAlign: TextAlign.justify,
             overflow: TextOverflow.ellipsis,
-            maxLines: 3,style:  TextStyle(color: Colors.lightGreenAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
+            maxLines: 3,style:  TextStyle(color: Colors.yellowAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
           ),
         ),
 
@@ -109,7 +109,7 @@ class MythBusters extends StatelessWidget{
                 padding: const EdgeInsets.only(top: 20.0,left: 35.0,right: 35.0),
                 child: Text("Can an ultraviolet disinfection lamp kill the new coronavirus?", textAlign: TextAlign.justify,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 3,style:  TextStyle(color: Colors.lightGreenAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
+                  maxLines: 3,style:  TextStyle(color: Colors.yellowAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
                 ),
               ),
 
@@ -125,7 +125,7 @@ class MythBusters extends StatelessWidget{
                 padding: const EdgeInsets.only(top: 20.0,left: 35.0,right: 35.0),
                 child: Text("How effective are thermal scanners in detecting people infected with the new coronavirus?", textAlign: TextAlign.justify,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 3,style:  TextStyle(color: Colors.lightGreenAccent,fontSize: 18.0,fontWeight: FontWeight.w600),
+                  maxLines: 3,style:  TextStyle(color: Colors.yellowAccent,fontSize: 18.0,fontWeight: FontWeight.w600),
                 ),
               ),
 
@@ -141,7 +141,7 @@ class MythBusters extends StatelessWidget{
                 padding: const EdgeInsets.only(top: 20.0,left: 35.0,right: 35.0),
                 child: Text("Can spraying alcohol or chlorine all over your body kill the new coronavirus?", textAlign: TextAlign.justify,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 3,style:  TextStyle(color: Colors.lightGreenAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
+                  maxLines: 3,style:  TextStyle(color: Colors.yellowAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
                 ),
               ),
 
@@ -157,7 +157,7 @@ class MythBusters extends StatelessWidget{
                 padding: const EdgeInsets.only(top: 20.0,left: 35.0,right: 35.0),
                 child: Text("Can eating garlic help prevent infection with the new coronavirus?", textAlign: TextAlign.justify,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 3,style:  TextStyle(color: Colors.lightGreenAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
+                  maxLines: 3,style:  TextStyle(color:Colors.yellowAccent,fontSize: 18.0 ,fontWeight: FontWeight.w600),
                 ),
               ),
 
@@ -175,7 +175,7 @@ class MythBusters extends StatelessWidget{
                 padding: const EdgeInsets.only(top: 20.0,left: 35.0,right: 35.0),
                 child: Text("Does the new coronavirus affect older people, or are younger people also susceptible?", textAlign: TextAlign.justify,
                   overflow: TextOverflow.ellipsis,
-                  maxLines: 3,style:  TextStyle(color: Colors.lightGreenAccent,fontSize: 18.0 ,letterSpacing: 1,fontWeight: FontWeight.w600),
+                  maxLines: 3,style:  TextStyle(color: Colors.yellowAccent,fontSize: 18.0 ,letterSpacing: 1,fontWeight: FontWeight.w600),
                 ),
               ),
 

@@ -9,7 +9,7 @@ class Symptomps extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      backgroundColor: Colors.black,
+        backgroundColor: Colors.white10,
         appBar: BaseAppBar(
           title: Text("hekko"),
           appbar: AppBar(),
@@ -30,7 +30,7 @@ class Symptomps extends StatelessWidget{
                   padding: const EdgeInsets.only(top: 30.0,left: 35.0,right: 35.0),
                   child: Text('Symptomps of CoronaVirus',
                     overflow: TextOverflow.ellipsis,
-                    maxLines: 4,style:  TextStyle(color: Colors.cyanAccent,fontSize: 25.0 ,fontWeight: FontWeight.w700),
+                    maxLines: 4,style:  TextStyle(color: Colors.greenAccent,fontSize: 25.0 ,fontWeight: FontWeight.w700),
                   ),
                 ),
 
@@ -175,7 +175,7 @@ class Symptomps extends StatelessWidget{
                   padding: const EdgeInsets.only(top: 10.0,left: 35.0,right: 35.0),
                   child: Text('Some people may have no symptoms at all.', textAlign: TextAlign.justify,
                     overflow: TextOverflow.ellipsis,
-                    maxLines: 4,style:  TextStyle(color: Colors.redAccent,fontSize: 18.0,fontWeight: FontWeight.w900 ),
+                    maxLines: 4,style:  TextStyle(color: Colors.orangeAccent,fontSize: 18.0,fontWeight: FontWeight.w900 ),
                   ),
                 ),
 
